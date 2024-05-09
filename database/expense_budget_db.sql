@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2024 at 09:35 AM
+-- Generation Time: May 09, 2024 at 05:33 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -43,8 +43,13 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `user_id`, `category`, `description`, `status`, `balance`, `date_created`, `date_updated`) VALUES
-(34, 1, 'Rent', '', 1, 2000, '2024-05-07 15:03:04', '2024-05-07 15:03:50'),
-(35, 16, 'Rent', '', 1, 1000, '2024-05-07 15:03:15', '2024-05-07 15:03:32');
+(35, 16, 'Rent', '', 1, 1000, '2024-05-07 15:03:15', '2024-05-07 15:03:32'),
+(36, 16, 'Water', '', 1, 100, '2024-05-09 09:16:58', '2024-05-09 09:18:17'),
+(41, 1, 'Rent\r\n', '&lt;p&gt;Test1&lt;/p&gt;', 1, 500, '2024-05-09 10:57:02', '2024-05-09 11:01:18'),
+(42, 1, 'Water', '&lt;p&gt;Test2&lt;/p&gt;', 1, 500, '2024-05-09 10:57:49', '2024-05-09 11:01:40'),
+(43, 1, 'Snacks', '&lt;p&gt;Test3&lt;/p&gt;', 1, 250, '2024-05-09 10:58:09', '2024-05-09 11:01:54'),
+(44, 1, 'Electricity', '&lt;p&gt;Test4&lt;/p&gt;', 1, 2000, '2024-05-09 10:58:23', '2024-05-09 11:28:09'),
+(45, 1, 'Fare', '&lt;p&gt;Test5&lt;/p&gt;', 1, 250, '2024-05-09 10:58:33', '2024-05-09 11:02:24');
 
 -- --------------------------------------------------------
 
@@ -69,7 +74,19 @@ CREATE TABLE `running_balance` (
 
 INSERT INTO `running_balance` (`id`, `u_id`, `balance_type`, `category_id`, `amount`, `remarks`, `date_created`, `date_updated`) VALUES
 (79, 16, 1, 35, 1000, '', '2024-05-07 15:03:32', NULL),
-(80, 1, 1, 34, 2000, '', '2024-05-07 15:03:50', NULL);
+(82, 16, 1, 36, 200, '', '2024-05-09 09:17:54', NULL),
+(83, 16, 2, 36, 100, '', '2024-05-09 09:18:17', NULL),
+(85, 1, 1, 41, 1000, '&lt;p&gt;Test1&lt;/p&gt;', '2024-05-09 10:57:17', NULL),
+(86, 1, 1, 42, 1000, '&lt;p&gt;Test2&lt;/p&gt;', '2024-05-09 10:59:10', '2024-05-09 10:59:49'),
+(87, 1, 1, 43, 500, '&lt;p&gt;Test3&lt;/p&gt;', '2024-05-09 10:59:20', '2024-05-09 11:00:07'),
+(88, 1, 1, 44, 5000, '&lt;p&gt;Test4&lt;/p&gt;', '2024-05-09 10:59:27', '2024-05-09 11:00:15'),
+(89, 1, 1, 45, 500, '&lt;p&gt;Test5&lt;/p&gt;', '2024-05-09 10:59:37', '2024-05-09 11:00:24'),
+(90, 1, 2, 41, 500, '&lt;p&gt;Test1&lt;/p&gt;', '2024-05-09 11:01:17', NULL),
+(91, 1, 2, 42, 500, '&lt;p&gt;Test2&lt;/p&gt;', '2024-05-09 11:01:40', NULL),
+(92, 1, 2, 43, 250, '&lt;p&gt;Test3&lt;/p&gt;', '2024-05-09 11:01:54', NULL),
+(93, 1, 2, 44, 2500, '&lt;p&gt;Test4&lt;/p&gt;', '2024-05-09 11:02:06', NULL),
+(94, 1, 2, 45, 250, '&lt;p&gt;Test5&lt;/p&gt;', '2024-05-09 11:02:24', NULL),
+(95, 1, 2, 44, 500, '', '2024-05-09 11:28:09', NULL);
 
 -- --------------------------------------------------------
 
@@ -158,13 +175,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `running_balance`
 --
 ALTER TABLE `running_balance`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `system_info`
