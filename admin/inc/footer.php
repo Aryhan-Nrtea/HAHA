@@ -56,7 +56,7 @@
   })
 </script>
 <footer class="main-footer text-sm">
-        <strong>BuddyGet Management System.
+        <strong>BuddyGet: Savings Management System.
         <!-- <a href=""></a> -->
         </strong>
         All rights reserved.
