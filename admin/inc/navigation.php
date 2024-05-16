@@ -36,7 +36,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a href="<?php echo base_url ?>admin/?page=maintenance/category" class="nav-link nav-maintenance/category">
+                <a href="<?php echo base_url ?>admin/?page=maintenance" class="nav-link nav-maintenance">
                   <i class="nav-icon fas fa-th-list"></i>
                   <p>
                     Category
@@ -61,7 +61,7 @@
               </li>
               <li class="nav-header">Reports</li>
               <li class="nav-item dropdown">
-                <a href="<?php echo base_url ?>admin/?page=reports/budget" class="nav-link nav-reports-budget">
+                <a href="<?php echo base_url ?>admin/?page=budgetReport" class="nav-link nav-budgetReport">
                   <i class="nav-icon fas fa-file"></i>
                   <p>
                     Budget Report
@@ -69,7 +69,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a href="<?php echo base_url ?>admin/?page=reports/expense" class="nav-link nav-reports-expense">
+                <a href="<?php echo base_url ?>admin/?page=expenseReport" class="nav-link nav-expenseReport">
                   <i class="nav-icon fas fa-file-alt"></i>
                   <p>
                     Expense Report
@@ -106,26 +106,28 @@
   </div>
   <!-- /.sidebar -->
 </aside>
+
 <script>
   $(document).ready(function() {
     var page = '<?php echo isset($_GET['page']) ? $_GET['page'] : 'home' ?>';
     var s = '<?php echo isset($_GET['s']) ? $_GET['s'] : '' ?>';
-    page = page.split('/');
-    page = page[0];
+    var pageParts = page.split('/'); // Split the page parameter by '/'
+    var pageClass = pageParts[0]; // Take the first part as the main class
+    console.log(pageParts)
+
     if (s != '')
-      page = page + '_' + s;
+      pageClass += '_' + s;
 
-    if ($('.nav-link.nav-' + page).length > 0) {
-      $('.nav-link.nav-' + page).addClass('active')
-      if ($('.nav-link.nav-' + page).hasClass('tree-item') == true) {
-        $('.nav-link.nav-' + page).closest('.nav-treeview').siblings('a').addClass('active')
-        $('.nav-link.nav-' + page).closest('.nav-treeview').parent().addClass('menu-open')
-      }
-      if ($('.nav-link.nav-' + page).hasClass('nav-is-tree') == true) {
-        $('.nav-link.nav-' + page).parent().addClass('menu-open')
-      }
+    // Remove the 'active' class from all nav links
+    $('.nav-link').removeClass('active');
 
-    }
+    // Add the 'active' class to the current nav link based on the page
+    $('.nav-link.nav-' + pageClass).addClass('active');
 
-  })
+    // Add the 'active' class to any parent nav item if it's a tree item
+    $('.nav-link.nav-' + pageClass).parents('.nav-item').addClass('active');
+
+    // Add the 'menu-open' class to any parent nav item if it's a tree item
+    $('.nav-link.nav-' + pageClass).parents('.nav-treeview').siblings('.nav-link').addClass('active').parent('.nav-item').addClass('menu-open');
+  });
 </script>
