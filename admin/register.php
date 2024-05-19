@@ -5,7 +5,42 @@
 <?php require_once('inc/header.php'); ?>
 
 <body class="hold-transition login-page bg-navy">
+    <style>
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+.animated-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.animated-text h2,
+.animated-text p {
+    overflow: hidden; /* Ensures text is not visible until animation starts */
+    white-space: nowrap; /* Ensures text doesn't wrap */
+    animation: typing 4s steps(40, end); /* Adjust timing as needed */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with 0 width */
+    }
+    to {
+        width: 100%; /* End with full width */
+    }
+}
+
+</style>
     <script>
         start_loader();
     </script>
@@ -14,15 +49,21 @@
         <div class="login-box _form w-100 mx-4">
             <div class="row">
                 <!-- Image column -->
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="../assets/images/register-bg.jpg" class="img-fluid" alt="Registration Image">
+                <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -25px;">
+                    <img src="../assets/images/save.jpg" class="img-fluid" alt="Registration Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; animation: fadeIn 1.5s ease;">
+                    <div class="animated-text">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Welcome to BuddyGet</h2>
+                        <p style="font-size: 1.2rem;">Create account and Join Us.</p>
+                    </div>
+                    </div>
                 </div>
                 <!-- Registration form column -->
-                <div class="col-md-6">
-                    <h2 class="text-center mb-4 pb-3">Create Account Here</h2>
+                <div class="col-md-6" style="margin-top: 20vh; margin-left: 20px;">
+                    <!-- <h2 class="text-center mb-4 pb-3">Create Account Here</h2> -->
                     <div class="card card-outline card-primary">
                         <div class="card-body">
-                            <p class="login-box-msg text-dark">REGISTER</p>
+                            <p class="login-box-msg text-dark">Create account here</p>
                             <!-- Registration Form -->
                             <form id="register-frm" method="post" action="">
                                 <div class="input-group mb-3">
