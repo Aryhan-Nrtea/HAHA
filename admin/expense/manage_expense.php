@@ -20,7 +20,7 @@ $user_id = $user['id'];
 
 ?>
 
-<div class="container-fluid">
+<div class="conteiner-fluid">
     <form action="" id="expense-form">
         <input type="hidden" name="id" value="<?php echo isset($id) ? $id : '' ?>">
         <input type="hidden" name="balance_type" value="2">
@@ -40,15 +40,12 @@ $user_id = $user['id'];
         
         <div class="form-group">
             <label for="amount" class="control-label">Amount</label>
-            <input name="amount" id="amount" class="form-control form text-right number" value="<?php echo isset($amount) ? $amount : 0; ?>">
+            <input name="amount" id="amount" class="form-control form text-right number" value="<?php echo isset($amount) ? ($amount) : 0; ?>">
         </div>
-        
         <div class="form-group">
             <label for="remarks" class="control-label">Description</label>
-            <textarea name="remarks" id="remarks" cols="30" rows="2" class="form-control form no-resize summernote"><?php echo isset($remarks) ? $remarks : ''; ?></textarea>
+            <textarea name="remarks" id="" cols="30" rows="2" class="form-control form no-resize summernote"><?php echo isset($remarks) ? $remarks : ''; ?></textarea>
         </div>
-        
-        <!-- <button type="submit" class="btn btn-primary">Save Expense</button> -->
     </form>
 </div>
 

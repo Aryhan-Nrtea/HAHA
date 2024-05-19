@@ -37,8 +37,7 @@ while ($date_row = $date_range_query->fetch_assoc()) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
+ 
 
 </head>
 
@@ -52,7 +51,7 @@ while ($date_row = $date_range_query->fetch_assoc()) {
       padding: unset;
     }
   </style>
-  <h1>Welcome to <?php echo $_settings->info('name') ?></h1>
+  <h1>Welcome to BuddyGet</h1>
   <hr>
   <div class="row">
     <div class="col-12 col-sm-6 col-md-3">
@@ -158,13 +157,11 @@ while ($date_row = $date_range_query->fetch_assoc()) {
                 <div class="form-group col-md-1">
                     <button class="btn btn-flat btn-block btn-primary btn-sm"><i class="fa fa-filter"></i> Filter</button>
                 </div>
-                <div class="form-group col-md-1">
-                    <button class="btn btn-flat btn-block btn-success btn-sm" type="button" id="printBTN"><i class="fa fa-print"></i> Print</button>
-                </div>
+                
             </div>
         </form>
         <hr>
-        <div id="printable">
+        
             <div>
                 <h4 class="text-center m-0"><?php echo $_settings->info('name') ?></h4>
                 <h3 class="text-center m-0"><b>Budget and Expense Graph</b></h3>
@@ -225,21 +222,6 @@ var budgetExpensesData = <?php echo json_encode($budget_expenses_data); ?>;
                 e.preventDefault()
                 location.href = "./?home.php/&date_start=" + $('[name="date_start"]').val() + "&date_end=" + $('[name="date_end"]').val()
         })
-
-            $('#printBTN').click(function() {
-                var rep = $('#printable').clone();
-                var ns = $('head').clone();
-                rep.prepend(ns)
-                var nw = window.document.open('', '_blank', 'width=900,height=600')
-                nw.document.write(rep.html())
-                nw.document.close()
-                setTimeout(function() {
-                    nw.print()
-                    setTimeout(function() {
-                        nw.close()
-                    }, 500)
-                }, 500)
-            });
         });
 
 

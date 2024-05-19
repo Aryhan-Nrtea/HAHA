@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     table td,
     table th {
         padding: 3px !important;
@@ -126,4 +126,4 @@ $user_id = $user['id'];
             }, 500)
         })
     })
-</script>
+</script> -->
