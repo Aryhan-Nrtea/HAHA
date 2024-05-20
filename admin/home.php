@@ -37,6 +37,9 @@ while ($date_row = $date_range_query->fetch_assoc()) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Light mode CSS -->
+
+
  
 
 </head>
@@ -51,11 +54,13 @@ while ($date_row = $date_range_query->fetch_assoc()) {
       padding: unset;
     }
   </style>
-  <h1>Welcome to BuddyGet</h1>
+  
+
+  <h1 class="text-center">Welcome to BuddyGet</h1>
   <hr>
-  <div class="row">
+  <div class="row justify-content-center" style="margin-top: 5%;">
     <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box">
+      <div class="info-box text-center">
         <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-money-bill-alt"></i></span>
 
         <div class="info-box-content">
@@ -77,7 +82,7 @@ while ($date_row = $date_range_query->fetch_assoc()) {
     </div>
     <!-- /.col -->
     <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box mb-3">
+      <div class="info-box mb-3 text-center">
         <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-calendar-day"></i></span>
 
         <div class="info-box-content">
@@ -100,7 +105,7 @@ while ($date_row = $date_range_query->fetch_assoc()) {
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12" style="margin-top: 5%;">
       <h4>Alloted Budget in each Categories</h4>
       <hr>
     </div>
@@ -140,8 +145,9 @@ while ($date_row = $date_range_query->fetch_assoc()) {
 
       <!-- Chart to track budget and expenses -->
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="margin-top: 5%;">
             <h4>Graph</h4>
+            <hr>
 
             <div class="card-body">
         <form id="filter-form">

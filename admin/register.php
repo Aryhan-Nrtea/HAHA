@@ -4,7 +4,7 @@
 <html lang="en" class="" style="height: auto;">
 <?php require_once('inc/header.php'); ?>
 
-<body class="hold-transition login-page bg-navy">
+<body class="hold-transition login-page bg-black" style="overflow: hidden;">
     <style>
 @keyframes fadeIn {
     from {
@@ -39,17 +39,33 @@
         width: 100%; /* End with full width */
     }
 }
-
 </style>
     <script>
         start_loader();
     </script>
 
-    <main class="d-flex">
+
+<main class="d-flex">
+            <div class="login-box _form w-100 mx-4">
+                <div class="row" style="height: 100vh;">
+                    <!-- Image column -->
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -5%;">
+                        <img src="../assets/images/logImg.jpg" class="img-fluid" alt="Register Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
+                            <div class="animated-text">
+                                <h2 style="font-size: 4rem; margin-bottom: 1rem; text-align: center;">Welcome to BuddyGet</h2>
+                                <p style="font-size: 1.2rem; text-align: center;">Create your account and Start saving!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    <!-- <main class="d-flex">
         <div class="login-box _form w-100 mx-4">
             <div class="row">
-                <!-- Image column -->
-                <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -25px;">
+               
+                <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -5%;">
                     <img src="../assets/images/save.jpg" class="img-fluid" alt="Registration Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
                     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; animation: fadeIn 1.5s ease;">
                     <div class="animated-text">
@@ -57,13 +73,14 @@
                         <p style="font-size: 1.2rem;">Create account and Join Us.</p>
                     </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Registration form column -->
-                <div class="col-md-6" style="margin-top: 20vh; margin-left: 20px;">
+                <!-- <div class="col-md-6" style="margin-top: 30vh; margin-left: 20px;"> -->
+                <div class="col-md-6 align-items-center justify-content-center"  style="margin-top: 30vh; margin-left: 4%; height: 100vh;">
                     <!-- <h2 class="text-center mb-4 pb-3">Create Account Here</h2> -->
                     <div class="card card-outline card-primary">
                         <div class="card-body">
-                            <p class="login-box-msg text-dark">Create account here</p>
+                            <p class="login-box-msg text-dark">Create Account</p>
                             <!-- Registration Form -->
                             <form id="register-frm" method="post" action="">
                                 <div class="input-group mb-3">

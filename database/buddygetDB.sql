@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2024 at 10:46 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- Generation Time: May 20, 2024 at 10:45 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,12 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `user_id`, `category`, `description`, `status`, `balance`, `date_created`, `date_updated`) VALUES
 (47, 1, 'Test', '&lt;p&gt;test&lt;/p&gt;', 1, 400, '2024-05-19 12:37:54', '2024-05-19 13:28:49'),
 (48, 16, 'Test', '', 1, 500, '2024-05-19 12:53:27', '2024-05-19 12:53:51'),
-(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL);
+(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL),
+(50, 1, 'Test', '', 1, 0, '2024-05-20 15:31:23', NULL),
+(51, 1, 'test', '', 1, 0, '2024-05-20 15:31:32', NULL),
+(52, 1, 'test', '', 1, 0, '2024-05-20 15:31:40', NULL),
+(53, 1, 'test', '', 1, 0, '2024-05-20 15:31:46', NULL),
+(54, 1, 'test', '', 1, 0, '2024-05-20 15:31:50', NULL);
 
 -- --------------------------------------------------------
 
@@ -163,7 +168,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `running_balance`

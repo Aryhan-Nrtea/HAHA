@@ -1,4 +1,8 @@
 <style>
+   .main-sidebar {
+    background-color: black !important;
+  }
+
   .main-sidebar a {
     color: white !important;
   }

@@ -5,9 +5,10 @@
     <html lang="en" class="" style="height: auto;">
     <?php require_once('inc/header.php') ?>
 
-    <body class="hold-transition login-page bg-navy">
+    <body class="hold-transition login-page bg-black" style="overflow: hidden;">
 
     <style>
+
 .animated-text {
     position: absolute;
     top: 50%;
@@ -32,6 +33,8 @@
         width: 100%; /* End with full width */
     }
 }
+
+
 </style>
         <script>
             start_loader()
@@ -41,22 +44,22 @@
             <div class="login-box _form w-100 mx-4">
                 <div class="row" style="height: 100vh;">
                     <!-- Image column -->
-                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -3%;">
-                    <img src="../assets/images/penny.jpg" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
-                    <div class="animated-text">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Welcome to BuddyGet</h2>
-                        <p style="font-size: 1.2rem;">"Where every penny counts toward your dreams"</p>
-                    </div>
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -5%;">
+                        <img src="../assets/images/logImg.jpg" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3; ">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
+                            <div class="animated-text">
+                                <h2 style="font-size: 4rem; margin-bottom: 1rem;">Welcome to BuddyGet</h2>
+                                <p style="font-size: 1.2rem;">"Where every penny counts towards your dreams"</p>
+                            </div>
                     </div>
                 </div>
                     <!-- Login form column -->
                     <!-- <div class="col-md-6" style="margin-top: 20vh; margin-left: auto;"> -->
-                    <div class="col-md-6 align-items-center justify-content-center"  style="margin-top: 20vh; margin-left: 20px; height: 100vh;">
+                    <div class="col-md-6 align-items-center justify-content-center"  style="margin-top: 30vh; margin-left: auto; height: 100vh;">
                     <!-- <div class="w-100" style="margin-top: 20vh; margin-left: 5%;"> -->
                         <!-- <h2 class="text-center mb-4 pb-3">Login to BuddyGet</h2> -->
-                        <div class="card card-outline card-primary w-100">
-                            <div class="card-body w-100 h-100">
+                        <div class="card card-outline card-primary">
+                            <div class="card-body">
                                 <p class="login-box-msg text-dark">Login to access your account</p>
                                 <form id="login-frm" action="" method="post">
                                     <div class="input-group mb-3">
