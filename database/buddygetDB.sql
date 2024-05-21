@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2024 at 10:45 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Generation Time: May 21, 2024 at 05:29 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,12 +45,7 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `user_id`, `category`, `description`, `status`, `balance`, `date_created`, `date_updated`) VALUES
 (47, 1, 'Test', '&lt;p&gt;test&lt;/p&gt;', 1, 400, '2024-05-19 12:37:54', '2024-05-19 13:28:49'),
 (48, 16, 'Test', '', 1, 500, '2024-05-19 12:53:27', '2024-05-19 12:53:51'),
-(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL),
-(50, 1, 'Test', '', 1, 0, '2024-05-20 15:31:23', NULL),
-(51, 1, 'test', '', 1, 0, '2024-05-20 15:31:32', NULL),
-(52, 1, 'test', '', 1, 0, '2024-05-20 15:31:40', NULL),
-(53, 1, 'test', '', 1, 0, '2024-05-20 15:31:46', NULL),
-(54, 1, 'test', '', 1, 0, '2024-05-20 15:31:50', NULL);
+(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL);
 
 -- --------------------------------------------------------
 
@@ -99,7 +94,7 @@ CREATE TABLE `system_info` (
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
 (1, 'name', 'BuddyGet: Savings Management System'),
 (6, 'short_name', 'BuddyGet'),
-(11, 'logo', 'uploads/1627606920_modeylogo.jpg');
+(11, 'logo', 'uploads/1716305100_Logo1.png');
 
 -- --------------------------------------------------------
 
@@ -125,9 +120,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`, `avatar`, `last_login`, `type`, `date_added`, `date_updated`) VALUES
-(1, 'Arian', 'Nartea', 'ADMIN', '0192023a7bbd73250516f069df18b500', 'uploads/1713767700_taytay.jpg', NULL, 1, '2021-01-20 14:02:37', '2024-05-19 13:18:55'),
+(1, 'Arian', 'Nartea', 'ADMIN1', 'e00cf25ad42683b3df678c61f42c6bda', 'uploads/1713767700_taytay.jpg', NULL, 1, '2021-01-20 14:02:37', '2024-05-21 21:42:06'),
 (16, 'Dummy', 'Account', 'TEST', '16d7a4fca7442dda3ad93c9a726597e4', NULL, NULL, 0, '2024-04-30 11:34:45', '2024-05-19 13:21:29'),
-(22, '', '', 'Yaen', '533cb9f9d7bc05ade7986ffaeafaadfc', NULL, NULL, 0, '2024-05-19 13:29:59', NULL);
+(22, '', '', 'Yaen', '533cb9f9d7bc05ade7986ffaeafaadfc', NULL, NULL, 0, '2024-05-19 13:29:59', NULL),
+(24, '', '', 'Arian', '4d0c453e1c6b9b6c514546a59b6b775c', NULL, NULL, 0, '2024-05-21 22:56:57', NULL);
 
 --
 -- Indexes for dumped tables
@@ -186,7 +182,7 @@ ALTER TABLE `system_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables

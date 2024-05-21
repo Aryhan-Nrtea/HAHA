@@ -43,7 +43,7 @@
                 <a href="<?php echo base_url ?>admin/?page=maintenance" class="nav-link nav-maintenance">
                   <i class="nav-icon fas fa-th-list"></i>
                   <p>
-                    Category
+                    Category Management
                   </p>
                 </a>
               </li>
@@ -59,7 +59,7 @@
                 <a href="<?php echo base_url ?>admin/?page=expense" class="nav-link nav-expense">
                   <i class="nav-icon fas fa-money-bill-wave"></i>
                   <p>
-                    Expenses
+                    Expense Tracking
                   </p>
                 </a>
               </li>

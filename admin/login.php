@@ -22,10 +22,20 @@
 .animated-text p {
     overflow: hidden; /* Ensures text is not visible until animation starts */
     white-space: nowrap; /* Ensures text doesn't wrap */
-    animation: typing 4s steps(40, end); /* Adjust timing as needed */
+    
+}
+.animated-text h2 {
+    animation: typing-h2 3s steps(40, end) forwards; /* Adjust timing as needed */
 }
 
-@keyframes typing {
+.animated-text p:nth-of-type(1) {
+    animation: typing-p1 6s steps(40, end) forwards; /* Adjust timing as needed */
+}
+
+.animated-text p:nth-of-type(2) {
+    animation: typing-p2 8s steps(40, end) forwards; /* Adjust timing as needed */
+}
+@keyframes typing-h2 {
     from {
         width: 0; /* Start with 0 width */
     }
@@ -33,6 +43,38 @@
         width: 100%; /* End with full width */
     }
 }
+
+@keyframes typing-p1 {
+    0% {
+        width: 0; /* Start with 0 width */
+    }
+    50% {
+        width: 0; /* Stay at 0 width for first 50% of animation */
+    }
+    to {
+        width: 100%; /* End with full width */
+    }
+}
+@keyframes typing-p2 {
+    0% {
+        width: 0; /* Start with 0 width */
+    }
+    75% {
+        width: 0; /* Stay at 0 width for first 75% of animation */
+    }
+    to {
+        width: 100%; /* End with full width */
+    }
+}
+
+/* @keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+} */
 
 
 </style>
@@ -44,12 +86,15 @@
             <div class="login-box _form w-100 mx-4">
                 <div class="row" style="height: 100vh;">
                     <!-- Image column -->
-                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -5%;">
-                        <img src="../assets/images/logImg.jpg" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3; ">
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -4%;">
+                        <img src="../assets/images/Logo1.png" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
                         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
                             <div class="animated-text">
-                                <h2 style="font-size: 4rem; margin-bottom: 1rem;">Welcome to BuddyGet</h2>
-                                <p style="font-size: 1.2rem;">"Where every penny counts towards your dreams"</p>
+                            <h2 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Welcome to BuddyGet</h2>
+<p style="font-size: 2rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Savings Management System</p>
+<p style="font-size: 1.0rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">"Where every penny counts towards your dreams"</p>
+
+
                             </div>
                     </div>
                 </div>
@@ -60,7 +105,8 @@
                         <!-- <h2 class="text-center mb-4 pb-3">Login to BuddyGet</h2> -->
                         <div class="card card-outline card-primary">
                             <div class="card-body">
-                                <p class="login-box-msg text-dark">Login to access your account</p>
+                            <p class="login-box-msg text-dark" style="font-size: 20px; font-weight: bold;">Login to access your account</p>
+
                                 <form id="login-frm" action="" method="post">
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" name="username" placeholder="Username" autofocus>
@@ -83,9 +129,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" value="login" class="btn btn-primary btn-block">Log In</button>
+                                    <button type="submit" value="login" class="btn btn-primary btn-block" style="font-weight: bold">Login</button>
                                     <div class="row justify-content-center">
-                                    <p class="text-dark mt-2 d-block mx-auto">Don't have an account? <span><a href="./register.php">Sign Up</a></span></p>
+                                    <p class="text-dark mt-2 d-block mx-auto">Don't have an account? <span><a href="./register.php" style="font-weight: bold;">Sign Up</a></span>
+
                                 </form>
                             </div>
                             <!-- /.card-body -->

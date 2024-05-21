@@ -55,7 +55,7 @@
     }
   })
 </script>
-<footer class="main-footer text-sm">
+<footer class="main-footer text-sm bg-black">
         <strong>BuddyGet: Savings Management System.
         <!-- <a href=""></a> -->
         </strong>

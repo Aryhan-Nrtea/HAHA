@@ -169,7 +169,7 @@ while ($date_row = $date_range_query->fetch_assoc()) {
         <hr>
         
             <div>
-                <h4 class="text-center m-0"><?php echo $_settings->info('name') ?></h4>
+                <!-- <h4 class="text-center m-0"><?php echo $_settings->info('name') ?></h4> -->
                 <h3 class="text-center m-0"><b>Budget and Expense Graph</b></h3>
                 <hr style="width:15%">
                 <p class="text-center m-0">Date Between <b><?php echo date("M d, Y", strtotime($date_start)) ?> and <?php echo date("M d, Y", strtotime($date_end)) ?></b></p>
