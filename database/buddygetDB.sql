@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2024 at 05:29 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: May 22, 2024 at 09:27 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,8 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `user_id`, `category`, `description`, `status`, `balance`, `date_created`, `date_updated`) VALUES
 (47, 1, 'Test', '&lt;p&gt;test&lt;/p&gt;', 1, 400, '2024-05-19 12:37:54', '2024-05-19 13:28:49'),
 (48, 16, 'Test', '', 1, 500, '2024-05-19 12:53:27', '2024-05-19 12:53:51'),
-(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL);
+(49, 16, 'Hatok', '', 1, 0, '2024-05-19 13:20:48', NULL),
+(55, 1, 'rent', '', 1, 4000, '2024-05-22 15:24:04', '2024-05-22 15:24:27');
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,9 @@ INSERT INTO `running_balance` (`id`, `u_id`, `balance_type`, `category_id`, `amo
 (97, 1, 2, 47, 500, '&lt;p&gt;test&lt;/p&gt;', '2024-05-19 12:39:02', NULL),
 (98, 16, 1, 48, 1000, '', '2024-05-19 12:53:38', NULL),
 (99, 16, 2, 48, 500, '', '2024-05-19 12:53:51', NULL),
-(101, 1, 2, 47, 100, '', '2024-05-19 13:28:49', NULL);
+(101, 1, 2, 47, 100, '', '2024-05-19 13:28:49', NULL),
+(102, 1, 1, 55, 5000, '', '2024-05-22 15:24:14', NULL),
+(103, 1, 2, 55, 1000, '', '2024-05-22 15:24:27', NULL);
 
 -- --------------------------------------------------------
 
@@ -94,7 +97,7 @@ CREATE TABLE `system_info` (
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
 (1, 'name', 'BuddyGet: Savings Management System'),
 (6, 'short_name', 'BuddyGet'),
-(11, 'logo', 'uploads/1716305100_Logo1.png');
+(11, 'logo', 'uploads/1716362580_Budget.png');
 
 -- --------------------------------------------------------
 
@@ -164,13 +167,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `running_balance`
 --
 ALTER TABLE `running_balance`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT for table `system_info`

@@ -5,6 +5,7 @@
 <?php require_once('inc/header.php'); ?>
 
 <body class="hold-transition login-page bg-black" style="overflow: hidden;">
+
     <style>
 @keyframes fadeIn {
     from {
@@ -90,13 +91,13 @@
             <div class="login-box _form w-100 mx-4">
                 <div class="row" style="height: 100vh;">
                     <!-- Image column -->
-                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -4%;">
-                        <img src="../assets/images/Logo1.png" class="img-fluid" alt="Register Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
-                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -15.5%;">
+                        <img src="../assets/images/Budget.png" class="img-fluid" alt="Register Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.1;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #1877F2;">
                             <div class="animated-text">
-                                <h2 style="font-size: 3rem; margin-bottom: 1rem; text-align: center; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Welcome to BuddyGet</h2>
-                                <p style="font-size: 2rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Savings Management System</p>
-                                <p style="font-size: 1.3rem; text-align: center; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Create your account and Start saving!</p>
+                            <h2 style="font-size: 3rem; margin-bottom: 1rem; color:#1877F2; text-shadow: 0 0 2px white, 0 0 2px white;">Welcome to BuddyGet</h2>
+                                <p style="font-size: 2rem; color:#1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">Savings Management System</p>
+                                <p style="font-size: 1.3rem; color:#1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">"Create your account and Start Saving!"</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +119,7 @@
                 </div> -->
                 <!-- Registration form column -->
                 <!-- <div class="col-md-6" style="margin-top: 30vh; margin-left: 20px;"> -->
-                <div class="col-md-6 align-items-center justify-content-center"  style="margin-top: 30vh; margin-left: 4%; height: 100vh;">
+                <div class="col-md-6 align-items-center justify-content-center"  style="margin-top: 30vh; margin-left: auto; height: 100vh;">
                     <!-- <h2 class="text-center mb-4 pb-3">Create Account Here</h2> -->
                     <div class="card card-outline card-primary">
                         <div class="card-body">
@@ -162,8 +163,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center">
+                               
                                 <button type="submit" value="submit" class="btn btn-primary btn-block" style="font-weight: bold;">Sign Up</button>
+                                <div class="row justify-content-center">
 
                                     <p class="text-dark mt-2 d-block mx-auto">Already have an account? <span><a href="./login.php" style="font-weight: bold;">Login</a></span></p>
                                     <!-- /.col -->

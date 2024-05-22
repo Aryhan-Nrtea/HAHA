@@ -5,7 +5,11 @@
     <html lang="en" class="" style="height: auto;">
     <?php require_once('inc/header.php') ?>
 
+
+    
+
     <body class="hold-transition login-page bg-black" style="overflow: hidden;">
+    
 
     <style>
 
@@ -86,16 +90,15 @@
             <div class="login-box _form w-100 mx-4">
                 <div class="row" style="height: 100vh;">
                     <!-- Image column -->
-                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -4%;">
-                        <img src="../assets/images/Logo1.png" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
-                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;">
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -15%;">
+                        <img src="../assets/images/Budget.png" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.1;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #1877F2;">
                             <div class="animated-text">
-                            <h2 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Welcome to BuddyGet</h2>
-<p style="font-size: 2rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">Savings Management System</p>
-<p style="font-size: 1.0rem; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;">"Where every penny counts towards your dreams"</p>
+                            <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #1877F2; text-shadow: 0 0 2px white, 0 0 2px white;">Welcome to BuddyGet</h2>
+                                <p style="font-size: 2rem; color: #1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">Savings Management System</p>
+                                <p style="font-size: 1.1rem; color: #1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">"Where every penny counts towards your dreams"</p>
 
-
-                            </div>
+                        </div>
                     </div>
                 </div>
                     <!-- Login form column -->
