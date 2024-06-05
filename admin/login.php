@@ -90,13 +90,13 @@
             <div class="login-box _form w-100 mx-4">
                 <div class="row" style="height: 100vh;">
                     <!-- Image column -->
-                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -15%;">
-                        <img src="../assets/images/Budget.png" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.1;">
-                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #1877F2;">
+                    <div class="col-md-6 d-none d-md-block" style="position: relative; overflow: hidden; height: 100vh; margin-left: -5%;">
+                        <img src="../assets/images/logImg.jpg" class="img-fluid" alt="Login Image" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.1;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #FFFFFF;">
                             <div class="animated-text">
-                            <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #1877F2; text-shadow: 0 0 2px white, 0 0 2px white;">Welcome to BuddyGet</h2>
-                                <p style="font-size: 2rem; color: #1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">Savings Management System</p>
-                                <p style="font-size: 1.1rem; color: #1877F2; text-shadow: 0 0 1px white, 0 0 1px white;">"Where every penny counts towards your dreams"</p>
+                            <h2 style="font-size: 3rem; margin-bottom: 1rem;">Welcome to BuddyGet</h2>
+                                <p style="font-size: 2rem;">Savings Management System</p>
+                                <p style="font-size: 1.1rem;">"Where every penny counts towards your dreams"</p>
 
                         </div>
                     </div>
